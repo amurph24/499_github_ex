@@ -20,6 +20,9 @@ public class ObjectList<E> {
 		int newSize = elements.length*2;
 		elements = Arrays.copyOf(elements, newSize);
 	}
+	private void set(int n,E e) {
+		elements[n] = e;
+	}
 	
 	@SuppressWarnings("unchecked")
 	public E get(int i) {
