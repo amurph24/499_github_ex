@@ -33,6 +33,25 @@ public class ObjectList<E> {
 		return (E) elements[i];
 	}
 	
+
+	public void IntSort() {
+		
+			E Temp;
+			for (int i=0;i<size-1;++i){
+
+	            for(int j=0;j<size-i-1; ++j){
+
+	                if( (Integer) get(j+1) < (Integer) get(j)){
+
+	                    Temp = get(j);
+	                    set(j, get(j+1));
+	                    set(j+1, Temp);
+
+	                }
+	            }
+	        }
+		
+
 	public void StringSortAlphabet() {
 		E Temp;
 		for (int i=0;i<size-1;++i){

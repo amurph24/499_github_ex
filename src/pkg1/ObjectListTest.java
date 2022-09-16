@@ -46,5 +46,18 @@ class ObjectListTest {
         assertTrue(3 == list.get(2));
     }
 	}
+	
+	@Test
+	void IntSort() {
+		ObjectList<Integer> list = new ObjectList<Integer>();
+        list.add(1);
+        list.add(4);
+        list.add(7);
+        list.add(2);
+        list.add(99);
+        list.IntSort();
+        assertTrue(2 == list.get(1));
+        assertTrue(7 == list.get(3));
+	}
 
 
