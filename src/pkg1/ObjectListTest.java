@@ -7,8 +7,44 @@ import org.junit.jupiter.api.Test;
 class ObjectListTest {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+    public void testMyList() {
+        ObjectList<Integer> list = new ObjectList<Integer>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(3);
+        list.add(4);
+        assertTrue(4 == list.get(4));
+        assertTrue(2 == list.get(1));
+        assertTrue(3 == list.get(2));
+    }
+
+
+    @Test
+    public void testStringSort() {
+    	ObjectList<String> list = new ObjectList<String>();
+        list.add("and");
+        list.add("duck");
+        list.add("elephant");
+        list.add("boat");
+        list.add("cat");
+        list.StringSortAlphabet();
+        System.out.println(list.show());
+        assertTrue("boat".equals(list.get(1)));
+    }
+
+    @Test
+    public void testList() {
+    	ObjectList<Integer> list = new ObjectList<Integer>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(3);
+        list.add(4);
+        assertTrue(4 == list.get(4));
+        assertTrue(2 == list.get(1));
+        assertTrue(3 == list.get(2));
+    }
 	}
 
-}
+
