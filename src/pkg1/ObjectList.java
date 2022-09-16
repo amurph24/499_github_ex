@@ -35,7 +35,7 @@ public class ObjectList<E> {
 	
 
 	public void IntSort() {
-		
+		//Bubble sort
 			E Temp;
 			for (int i=0;i<size-1;++i){
 
@@ -50,9 +50,11 @@ public class ObjectList<E> {
 	                }
 	            }
 	        }
+	}
 		
 
 	public void StringSortAlphabet() {
+		//Bubble Sort using compareTo for strings
 		E Temp;
 		for (int i=0;i<size-1;++i){
 
@@ -71,7 +73,7 @@ public class ObjectList<E> {
 	public String show() {
 		String out = "";
 		for(int i = 0; i < size; i++) {
-			out += get(i) + " ";
+			out += get(i) + "\t ";
 		}
 		return out;
 	}
