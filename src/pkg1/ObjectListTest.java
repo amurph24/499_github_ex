@@ -45,7 +45,7 @@ class ObjectListTest {
         assertTrue(2 == list.get(1));
         assertTrue(3 == list.get(2));
     }
-	}
+	
 	
 	@Test
 	void IntSort() {
@@ -59,5 +59,7 @@ class ObjectListTest {
         assertTrue(2 == list.get(1));
         assertTrue(7 == list.get(3));
 	}
+	
+}
 
 
