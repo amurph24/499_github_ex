@@ -10,7 +10,7 @@ public class BookList {
 		Books.add("A. Kay, This is Going to Hurt");
 		Books.add("C. Cowell, How to Train Your Dragon");
 		Books.add("N. Gill, Your Soul Is A River");
-		// this is new
+		
 		System.out.println(Books.show());
 		Books.StringSortAlphabet();
 		System.out.println(Books.show());
